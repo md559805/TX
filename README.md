@@ -1,7 +1,5 @@
 # TX
 
-**Created by Matt**
-
 A local, modern desktop app that extracts **English and Persian** text from images and PDFs.
 Version 1.2.4 makes multi-file preview switchable with a file chooser and previous/next file buttons. Version 1.2.3 fixes a Windows theme-toggle crash after preview navigation and reduces frameless-dialog geometry warnings. Version 1.2.2 removes the remaining dark background behind the left-hand cards, removes the native shadow around the OCR setup/About dialogs, and fixes clipped OCR-setup status text. Version 1.2.0 added a bundled layout-aware OCR engine for Persian advertisements and mixed designs, plus a responsive window layout.
 
