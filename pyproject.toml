@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tx"
+version = "1.2.4"
+description = "TX — a local, premium desktop OCR app for English and Persian images and PDFs. Created by Matt."
+authors = [{ name = "Matt" }]
+requires-python = ">=3.10"
+dependencies = [
+  "PySide6-Essentials>=6.8,<7",
+  "Pillow>=11.0,<13",
+  "pypdfium2>=5.0,<6",
+  "pillow-heif>=0.21,<2",
+  "rapidocr[rtl]==3.10.0",
+  "onnxruntime>=1.20,<2",
+]
+
+[project.scripts]
+tx-cli = "tx.cli:main"
+
+[project.gui-scripts]
+tx = "tx.gui_entry:main"
+
+[tool.setuptools.packages.find]
+include = ["tx*"]
+
+[tool.setuptools.package-data]
+tx = [
+  "core/language_packs.json",
+  "assets/*.svg",
+  "assets/*.png",
+  "assets/fonts/*",
+  "assets/icons/*",
+  "assets/models/*",
+  "docs/*",
+]

@@ -1,0 +1,8 @@
+include README.md CHANGELOG.md LICENSE THIRD_PARTY_NOTICES.md requirements.txt requirements-dev.txt run.sh run.bat tx.spec
+recursive-include tx/assets *
+recursive-include tx/docs *
+recursive-include docs *
+recursive-include examples *
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include tests/fixtures *.png
